@@ -1,12 +1,13 @@
-// Toggle class active untuk hamburger menu
+// 1. Toggle class active untuk hamburger menu
 const navbarnav = document.querySelector(".navbar-nav");
 
 // Ketika hamburger menu diklik
-document.querySelector("#humberger-menu").onclick = () => {
+document.querySelector("#humberger-menu").onclick = (e) => {
   navbarnav.classList.toggle("active");
+  e.preventDefault(); // Mencegah lompatan link
 };
 
-// Klik di luar sidebar untuk menghilangkan nav
+// 2. Klik di luar sidebar untuk menghilangkan nav
 const humberger = document.querySelector("#humberger-menu");
 
 document.addEventListener("click", function (e) {
@@ -15,23 +16,46 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// FITUR BARU: Kirim Pesan ke WhatsApp
+// 3. FITUR: Kirim Pesan ke WhatsApp
 const contactForm = document.querySelector("form");
 
-contactForm.onsubmit = function (e) {
-  e.preventDefault(); // Mencegah halaman refresh
+if (contactForm) {
+  contactForm.onsubmit = function (e) {
+    e.preventDefault();
 
-  // Ambil data dari input
-  const nama = contactForm.querySelector('input[placeholder="nama"]').value;
-  const email = contactForm.querySelector('input[placeholder="email"]').value;
-  const nohp = contactForm.querySelector('input[placeholder="no.hp"]').value;
+    // Mengambil data berdasarkan ID agar lebih akurat
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+    const nohp = document.getElementById("nohp").value;
 
-  // Nomor WA Yayasan (Format Internasional tanpa tanda +)
-  const nomorWA = "6285194044236";
+    // Nomor WA Yayasan
+    const nomorWA = "6285194044236";
 
-  // Susun template pesan
-  const pesan = `Halo Yayasan Al-Insan,%0A%0ASaya ingin bertanya lebih lanjut mengenai program yayasan.%0A%0A*Data Pengunjung:*%0A- Nama: ${nama}%0A- Email: ${email}%0A- No. HP: ${nohp}`;
+    // Susun template pesan dengan format Bold di WhatsApp
+    const pesan = `Halo Yayasan Al-Insan,%0A%0ASaya *${nama}* ingin bertanya lebih lanjut mengenai program yayasan.%0A%0A*Data Pengunjung:*%0A- Email: ${email}%0A- No. HP: ${nohp}`;
 
-  // Buka link WhatsApp di tab baru
-  window.open(`https://wa.me/${nomorWA}?text=${pesan}`, "_blank");
+    window.open(`https://wa.me/${nomorWA}?text=${pesan}`, "_blank");
+  };
+}
+
+// 4. Inisialisasi AOS (Animate On Scroll)
+// Ini yang membuat elemen website muncul mengalir saat di-scroll
+if (typeof AOS !== "undefined") {
+  AOS.init({
+    duration: 1000, // Kecepatan animasi (1 detik)
+    once: true, // Animasi hanya berjalan sekali saat di-scroll ke bawah
+    offset: 120, // Jarak mulai animasi dari posisi elemen
+  });
+}
+
+// 5. Efek Navbar Berubah Warna Saat Scroll (Opsional agar lebih hidup)
+window.onscroll = () => {
+  const nav = document.querySelector(".navbar");
+  if (window.scrollY > 100) {
+    nav.style.backgroundColor = "rgba(1, 1, 1, 0.95)"; // Lebih gelap saat di-scroll
+    nav.style.boxShadow = "0 2px 10px rgba(0,0,0,0.5)";
+  } else {
+    nav.style.backgroundColor = "rgba(1, 1, 1, 0.8)"; // Kembali transparan
+    nav.style.boxShadow = "none";
+  }
 };

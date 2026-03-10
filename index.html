@@ -1,11 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YAYASAN AL-INSAN PAPUA SEJAHTERA</title>
 
-    <!-- Fonts -->
+    <meta
+      name="description"
+      content="Website Resmi Yayasan Al-Insan Papua Sejahtera di Sorong. Fokus pada pendidikan yatim, dhuafa, dan program keagamaan."
+    />
+    <meta
+      name="keywords"
+      content="Yayasan Al-Insan Papua, TPQ Sorong, Donasi Papua, Pendidikan Yatim"
+    />
+    <meta name="author" content="Fitroh" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,22 +22,21 @@
       rel="stylesheet"
     />
 
-    <!-- Feather Icon -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- My Style -->
-
-  <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!--  Nvbar start -->
     <nav class="navbar">
       <a href="#" class="navbar-logo"><span>Alinsan</span> Papua Sejahtera</a>
 
       <div class="navbar-nav">
-        <a href="#Home">Home </a>
-        <a href="#about">Program </a>
-        <a href="#menu">Bidang </a>
+        <a href="#Home">Home</a>
+        <a href="#pengurus">Pengurus</a>
+        <a href="#about">Program</a>
+        <a href="#menu">Bidang</a>
         <a href="#contact">Kontak</a>
       </div>
 
@@ -36,169 +44,197 @@
         <a href="#" id="humberger-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
-    <!--  Nvbar end -->
-
-    <!-- Hero Section Start-->
     <section class="hero" id="Home">
-      <main class="content">
+      <main class="content" data-aos="fade-right" data-aos-duration="1000">
         <h1>Mari Mengenal Yayasan <span>AL INSAN PAPUA SEJAHTERA</span></h1>
         <p>
-          Didirikan atas dasar kemanusiaan dan perintah agama, Yayasan Al Insan Papua Sejahtera hadir untuk menjawab minimnya akses pendidikan dan pembinaan bagi anak yatim serta kaum dhuafa di Kokoda Victory, Sorong.
-          Kami berfokus pada bidang sosial, pendidikan, dan keagamaan guna mencerdaskan bangsa. Berlandaskan semboyan "Ikhlas Berjariyah", kami terus berinovasi untuk memberikan manfaat luas dan terbuka terhadap saran konstruktif demi kemajuan bersama.
+          Didirikan atas dasar kemanusiaan dan perintah agama, Yayasan Al Insan
+          Papua Sejahtera hadir untuk menjawab minimnya akses pendidikan dan
+          pembinaan bagi anak yatim serta kaum dhuafa di Kokoda Victory, Sorong.
         </p>
         <div class="cta-news">
-          <p>Ingin mengetahui berita lebih lanjut silahkan klik tombol dibawah ini</p>
-          <a href="https://yayasanalinsan.or.id/" class="btn-news" target="_blank">Berita Yayasan</a>
+          <p>
+            Ingin mengetahui berita lebih lanjut silahkan klik tombol dibawah
+            ini
+          </p>
+          <a
+            href="https://yayasanalinsan.or.id/"
+            class="btn-news"
+            target="_blank"
+            >Berita Yayasan</a
+          >
         </div>
       </main>
     </section>
-    <!-- Hero Section End-->
 
-    <!-- About Section Start-->
-
-    <section id="about" class="about">
-      <h2><span>Program</span> Kami</h2>
-      <p>
-        Berikut adalah beberapa program yang kami jalankan di yayasan kami, yang bertujuan untuk membantu anak-anak di Papua untuk belajar dan berkembang dengan baik.
+    <section class="pengurus" id="pengurus">
+      <h2 data-aos="fade-up"><span>Pengurus</span> Yayasan</h2>
+      <p data-aos="fade-up">
+        Dedikasi kami dalam memajukan pendidikan dan kesejahteraan umat di
+        Papua.
       </p>
 
-      <div class="row">
+      <div class="row-pengurus">
+        <div class="pengurus-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="pengurus-img">
+            <img src="img\lalin.png" alt="Ust. Lalin" />
+          </div>
+          <div class="pengurus-info">
+            <h3>Ust. Lalin</h3>
+            <span>Pendiri Yayasan</span>
+          </div>
+        </div>
+
+        <div class="pengurus-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="pengurus-img">
+            <img src="img\samran.png" alt="Samran" />
+          </div>
+          <div class="pengurus-info">
+            <h3>Samran</h3>
+            <span>Ketua Yayasan</span>
+          </div>
+        </div>
+
+        <div class="pengurus-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="pengurus-img">
+            <img src="img\nasrun.png" alt="Nasrun" />
+          </div>
+          <div class="pengurus-info">
+            <h3>Nasrun</h3>
+            <span>Bagian Pendidikan</span>
+          </div>
+        </div>
+
+        <div class="pengurus-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="pengurus-img">
+            <img src="img\Mujiharyati.png" alt="Mujiharyati" />
+          </div>
+          <div class="pengurus-info">
+            <h3>Mujiharyati</h3>
+            <span>Bagian Bendahara</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 data-aos="fade-up"><span>Program</span> Kami</h2>
+      <p data-aos="fade-up">
+        Bertujuan untuk membantu anak-anak di Papua untuk belajar dan berkembang
+        dengan baik.
+      </p>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
         <div class="about-img">
-          <img src="img\tk.jpeg" alt="Tentang Kami" />
+          <img src="img/tk.jpeg" alt="Program TK" />
         </div>
         <div class="content">
-          <h3>TK</h3>
+          <h3>TK (Taman Kanak-Kanak)</h3>
           <p>
-            TK (Taman Kanak-Kanak) adalah program pendidikan untuk anak-anak usia 4-6 tahun yang bertujuan untuk memberikan dasar pendidikan yang kuat dan menyenangkan bagi anak-anak di Papua.
-          </p>
-          <p>
-            Program TK kami dirancang untuk membantu anak-anak mengembangkan keterampilan sosial, motorik, dan kognitif mereka melalui berbagai kegiatan yang menyenangkan dan edukatif.
-            kita percaya bahwa setiap anak memiliki potensi yang luar biasa, dan melalui program TK kami, kami berkomitmen untuk membantu mereka tumbuh dan berkembang dengan baik.
+            Pendidikan dasar yang kuat dan menyenangkan bagi anak-anak usia 4-6
+            tahun di Papua.
           </p>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-delay="200">
         <div class="about-img">
-          <img src="img\tpq.jpeg" alt="Tentang Kami" />
+          <img src="img/tpq.jpeg" alt="Program TPQ" />
         </div>
         <div class="content">
-          <h3>TPQ</h3>
+          <h3>TPQ (Taman Pendidikan Al-Qur'an)</h3>
           <p>
-            tpq (Taman Pendidikan Al-Qur'an) adalah program pendidikan yang bertujuan untuk memberikan pemahaman dan pengajaran tentang Al-Qur'an kepada anak-anak di Papua.
-      
-          </p>
-          <p>
-           Program TPQ kami dirancang untuk membantu anak-anak menghafal dan mencintai Al-Qur'an melalui metode yang interaktif dan menyenangkan. Selain fokus pada aspek spiritual dan iman, kurikulum kami diperkaya dengan pelajaran Bahasa Arab, Bahasa Inggris, serta keterampilan hidup (life skills) untuk mendukung tumbuh kembang anak-anak di Papua secara optimal.
+            Memberikan pemahaman Al-Qur'an dengan metode interaktif, diperkaya
+            pelajaran Bahasa Inggris dan Arab.
           </p>
         </div>
       </div>
     </section>
-    <!-- About Section End-->
-
-    <!-- Menu Section Start -->
     <section class="menu" id="menu">
-      <h2><span>Bidang</span> Yang ada</h2>
-      <p>
-        Berikut adalah beberapa bidang yang ada di yayasan kami, yang dapat membantu anak-anak di Papua untuk belajar dan berkembang dengan baik.
-      </p>
-
+      <h2 data-aos="fade-up"><span>Bidang</span> Yang ada</h2>
       <div class="row">
-        <div class="menu-card">
-          <img class="menu-card-img" src="img/Menu/quran.jpg" alt="Espresso" />
+        <div class="menu-card" data-aos="zoom-in" data-aos-delay="100">
+          <img class="menu-card-img" src="img/Menu/quran.jpg" alt="Tahfidz" />
           <h3 class="menu-card-title">- Tahfidz -</h3>
           <p class="menu-card-price">30 juz</p>
         </div>
-        <div class="menu-card">
+        <div class="menu-card" data-aos="zoom-in" data-aos-delay="200">
           <img
             class="menu-card-img"
             src="img/Menu/engslish.jpg"
-            alt="Espresso"
+            alt="English"
           />
           <h3 class="menu-card-title">- Bahasa Inggris -</h3>
           <p class="menu-card-price">Hafal Kosakata</p>
         </div>
-        <div class="menu-card">
-          <img class="menu-card-img" src="img/Menu/arabic.jpg" alt="Espresso" />
+        <div class="menu-card" data-aos="zoom-in" data-aos-delay="300">
+          <img class="menu-card-img" src="img/Menu/arabic.jpg" alt="Arabic" />
           <h3 class="menu-card-title">- Bahasa Arab -</h3>
           <p class="menu-card-price">Hafal Kosakata</p>
         </div>
-       
+      </div>
     </section>
-    <!-- Menu Section End -->
-
-    <!-- Contact Section Stat -->
     <section class="contact" id="contact">
-      <h2><span>Kontak</span> Kami</h2>
-      <p>
-        Silahkan hubungi kami jika anda ingin mengetahui lebih lanjut tentang yayasan kami, atau jika anda ingin bergabung dengan kami untuk membantu anak-anak di Papua.
-      </p>
-
-      <div class="row">
+      <h2 data-aos="fade-up"><span>Kontak</span> Kami</h2>
+      <div class="row" data-aos="fade-up">
         <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.6667218427126!2d131.30913662642848!3d-0.8932666237796167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d595502387219c3%3A0x9e6c4d22a93d0108!2sTPQ%20AL%20INSAN!5e0!3m2!1sid!2sid!4v1772436283775!5m2!1sid!2sid"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3333272199357!2d131.3079081747239!3d-0.8933738990979748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d595502387219c3%3A0x9e6c4d22a93d0108!2sTPQ%20AL%20INSAN!5e0!3m2!1sid!2sid!4v1773130244072!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-
         <form action="">
-        <div class="input-group">
-          <i data-feather="user"></i>
-          <input type="text" placeholder="nama" id="nama" required />
-        </div>
-        <div class="input-group">
-          <i data-feather="mail"></i>
-          <input type="email" placeholder="email" id="email" required />
-         </div>
-        <div class="input-group">
-         <i data-feather="phone"></i>
-          <input type="tel" placeholder="no.hp" id="nohp" pattern="[0-9]{10,15}" title="Masukkan nomor HP yang valid (10-15 digit)" required />
-        </div>
-         <button class="btn" type="submit">Kirim Pesan</button>
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" id="nama" required />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="email" id="email" required />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="tel" placeholder="no.hp" id="nohp" required />
+          </div>
+          <button class="btn" type="submit">Kirim Pesan</button>
         </form>
       </div>
     </section>
-    <!-- Contact Section End  -->
-
-    <!-- footer section Start -->
     <footer>
       <div class="socials">
-        <a href="https://www.youtube.com/@AlinsanPapua">
-          <i data-feather="youtube"></i>
-        </a>
+        <a href="https://www.youtube.com/@AlinsanPapua"
+          ><i data-feather="youtube"></i
+        ></a>
+        <a href="https://www.instagram.com/galeri_al.insan"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/share/1AcVV1ELcC/?mibextid=wwXIfr"
+          ><i data-feather="facebook"></i
+        ></a>
       </div>
-      <div class="socials">
-        <a href="https://www.instagram.com/galeri_al.insan?igsh=MWNkNTJhN2dxOG9hcQ==">
-          <i data-feather="instagram"></i>
-        </a>
-      </div>
-      <div class="socials">
-        <a href="https://www.facebook.com/share/1AcVV1ELcC/?mibextid=wwXIfr">
-          <i data-feather="facebook"></i>
-        </a>
-      </div>
-
       <div class="links">
         <a href="#Home">Home</a>
         <a href="#about">Program</a>
         <a href="#menu">Bidang</a>
-        <a href="#contact">Kontak Kami</a>
+        <a href="#pengurus">Pengurus</a>
       </div>
-
       <div class="credit">
-        <p>Created by <a href="">Ito/yayasan al-insan papua sejahtera</a>. | &copy; 2025.</p>
+        <p>Created by <a href="">Ito</a>. | © 2026.</p>
       </div>
     </footer>
-    <!-- footer section End -->
 
-    <!-- Feather Icon -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       feather.replace();
+      // Aktifkan Animasi
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
     </script>
-
-    <!-- Java Script -->
     <script src="js/script.js"></script>
   </body>
 </html>
